@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <title>RTS</title>
+        <script src='main.js'></script>
+        <script src='unit.js'></script>
+        <script src='draw.js'></script>
+        
+        <style>
+            BODY {
+                background-color: #111;
+                padding: 0;
+                margin: 0;
+            }
+            
+            #can {
+                background-color: #333;
+                border: 1px solid black;
+            }
+        </style>
+    </HEAD>
+    <BODY onload='init();'>
+        <canvas id='can'></canvas>
+        <button onclick='selectedUnit = Units.Basic;'>Basic</button>
+        <button onclick='selectedUnit = Units.Heavy;'>Heavy</button>
+        <button onclick='selectedUnit = Units.Light;'>Light</button>
+    </BODY>
+</HTML>
