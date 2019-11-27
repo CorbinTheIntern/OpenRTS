@@ -1,5 +1,7 @@
-var BaseUnit = function(cost, size, speed, health, range, attackSpeed) {
+var BaseUnit = function(cost, x, y, size, speed, health, range, attackSpeed) {
     this.cost = cost;
+    this.x = x;
+    this.y = y;
     this.size = size;
     this.speed = speed;
     this.health = health;
@@ -12,8 +14,8 @@ var BaseUnit = function(cost, size, speed, health, range, attackSpeed) {
 
 
 var Units = {
-    //                   Cost, Size, Speed, Health, Range, Damage, AttackSpeed
-    'Heavy': new BaseUnit(100, 10,  3, 7, 50, 2, 1),
-    'Basic': new BaseUnit( 30,  5,  6, 2, 40, 1, 2),
-    'Light': new BaseUnit( 20,  3, 10, 1, 30, 1, 5)
+    // Cost, Size, Speed, Health, Range, Damage, Attack Speed
+    'Heavy': 0,
+    'Basic': 1,
+    'Light': 2
 };
